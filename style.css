@@ -35,4 +35,7 @@ header {
   transition: color 0.3s ease;
 }
 
-.icon-links a:ho
+/* Hover effect for links */
+.icon-links a:hover {
+  color: #007BFF; /* Example: Change color on hover */
+}
