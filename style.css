@@ -45,7 +45,7 @@ header {
 
 /* Layout sections */
 main {
-  max-width: 900px;
+  max-width: 700px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
@@ -58,11 +58,13 @@ section.about {
 }
 
 section.about .text {
+  max-width: 600px; /* Set a readable line width */
   flex: 1;
 }
 
+
 section.about .photo img {
-  max-width: 160px;
+  max-width: 300px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
