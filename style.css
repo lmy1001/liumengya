@@ -8,6 +8,13 @@ body {
   line-height: 1.6;
 }
 
+/* Center content with horizontal margins */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 /* Header section */
 header {
   padding: 15px 30px;
@@ -15,9 +22,30 @@ header {
   border-bottom: 1px solid #ddd;
 }
 
+/* About section layout */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.about .text {
+  flex: 1 1 60%;
+}
+
+.about .photo {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: center;
+}
+
 .about .photo img {
-  max-width: 30px; /* Set the maximum width */
-  height: auto;     /* Maintain the aspect ratio */
+  max-width: 180px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Icon navigation (top left) */
@@ -42,5 +70,39 @@ header {
 
 /* Hover effect for links */
 .icon-links a:hover {
-  color: #007BFF; /* Example: Change color on hover */
+  color: #007BFF;
+}
+
+/* Publications section */
+.publications {
+  margin-top: 40px;
+}
+
+.publications h2 {
+  font-size: 24px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+.publication {
+  margin-bottom: 20px;
+}
+
+.publication h3 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.publication .buttons a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #aaa;
 }
