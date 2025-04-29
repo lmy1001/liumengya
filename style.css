@@ -81,7 +81,8 @@ header {
 }
 
 .about .photo img {
-  width: 100%;
+  width: 50%;
+  height: auto;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
