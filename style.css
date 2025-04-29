@@ -1,0 +1,38 @@
+/* General page style */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Header section */
+header {
+  padding: 15px 30px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Icon navigation (top left) */
+.icon-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.icon-links li {
+  display: inline;
+}
+
+.icon-links a {
+  font-size: 22px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.icon-links a:ho
