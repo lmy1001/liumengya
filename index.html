@@ -1,119 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mengya Liu | Homepage</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mengya Liu — researcher in humanoid robotics, vision-language-action models, world-action models, and 3D vision. Publications and news.">
+  <meta name="theme-color" content="#faf9f6">
+  <title>Mengya Liu | Robotics &amp; 3D Vision</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="container">
-
-    <header>
-      <nav>
-        <ul class="icon-links">
-          <li><a href="mailto:mengya.liu@vision.ee.ethz.ch" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
-          <li><a href="https://scholar.google.com/citations?user=LrGh5EIAAAAJ&hl=en&oi=ao" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/mengya-liu-a8a6bb295/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="https://github.com/lmy1001" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
-        </ul>
-      </nav>
+    <header class="site-header">
+      <a class="wordmark" href="#about">Mengya Liu<span aria-hidden="true">.</span></a>
+      <nav aria-label="Main navigation"><a href="#about">About</a><a href="#news">News</a><a href="#publications">Publications</a></nav>
     </header>
-
-    <main>
-      <section class="about" id="about">
-        <div class="about-content">
-          <div class="text">
-            <h1>Mengya Liu</h1>
-            <p>
-              I'm a researcher at Beijing Institute for General Artificial Intelligence (BIGAI) now.
-              I did my PhD at <a href="https://ethz.ch/en.html" target="_blank">ETH Zurich</a> in the 
-              <a href="https://vision.ee.ethz.ch/" target="_blank">Computer Vision Lab</a>, supervised by 
-              <a href="https://vision.ee.ethz.ch/people-details.OTAyMzM=.TGlzdC8zMjg3LC0xOTcxNDY1MTc4.html" target="_blank">Prof. Luc Van Gool</a> and 
-              <a href="https://scholar.google.com/citations?user=TFsE4BIAAAAJ&hl=en" target="_blank">Dr. Federico Tombari</a>.
-              Before that, I got my master degree at <a href="https://en.nwpu.edu.cn/" target="_blank">Northwestern Polytechnical University</a>.
-              
-              My research focuses on VLA, WAM models for humanoid robots. During my phd, I manly work on 3D vision tasks, especially 3D reconstruction, generation and 6D pose estimation.
-            </p>
+    <main id="main">
+      <section class="about" id="about" aria-labelledby="name">
+        <div class="about-text">
+          <p class="eyebrow">ROBOTICS &amp; 3D VISION</p>
+          <h1 id="name">Mengya Liu</h1>
+          <p>I’m a researcher at the Beijing Institute for General Artificial Intelligence (BIGAI). My research focuses on <strong>vision-language-action (VLA)</strong> and <strong>world-action (WAM) models for humanoid robots</strong>.</p>
+          <p>I received my PhD from <a href="https://ethz.ch/en.html">ETH Zurich</a> in the <a href="https://vision.ee.ethz.ch/">Computer Vision Lab</a>, supervised by <a href="https://vision.ee.ethz.ch/people-details.OTAyMzM=.TGlzdC8zMjg3LC0xOTcxNDY1MTc4.html">Prof. Luc Van Gool</a> and <a href="https://scholar.google.com/citations?user=TFsE4BIAAAAJ&amp;hl=en">Dr. Federico Tombari</a>. Before that, I earned my master’s degree at <a href="https://en.nwpu.edu.cn/">Northwestern Polytechnical University</a>. During my PhD, I worked on 3D reconstruction, generation, and 6D pose estimation.</p>
+          <div class="social-links" aria-label="Contact and profiles">
+            <a href="mailto:lmytwlight0831@gmail.com">Email <span aria-hidden="true">↗</span></a>
+            <a href="https://scholar.google.com/citations?user=LrGh5EIAAAAJ&amp;hl=en&amp;oi=ao">Google Scholar <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/lmy1001">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/mengya-liu-a8a6bb295/">LinkedIn <span aria-hidden="true">↗</span></a>
           </div>
-          <div class="photo">
-            <img src="my_photo.jpg" alt="Mengya Liu portrait" />
-          </div>
+        </div>
+        <figure class="portrait"><img src="my_photo.jpg" alt="Mengya Liu" width="320" height="390" fetchpriority="high"><figcaption>Researcher · BIGAI<br>PhD · ETH Zurich</figcaption></figure>
+      </section>
+      <section id="news" class="news" aria-labelledby="news-heading">
+        <div class="section-heading"><h2 id="news-heading">News</h2><span>A few recent updates</span></div>
+        <div class="news-list">
+          <article class="news-item"><span class="news-label">PRESENTATION</span><p>We will present our work <a href="https://young-bit.github.io/zero-hlm/"><strong>Zero-HLM</strong></a> in the <strong>CoRL 2026 Late Breaking Results Presentation</strong>.</p></article>
+          <article class="news-item"><time datetime="2026-09">September 2026</time><p><a href="https://deltai.com/en/blog/delta-0"><strong>Delta-0 (Δ₀): A New Chapter in Humanoid Intelligence</strong> <span aria-hidden="true">↗</span></a><span class="news-detail">Contributor · Blog</span></p></article>
         </div>
       </section>
-
-      <section class="publications" id="publications">
-        <h2>Selected Publications</h2>
-
-         <div class="publication">
-          <h3>LARA: Latent Action Representation Alignment for Vision-Language-Action Models</h3>
-          <p><strong>Mengya Liu*</strong>, Baoxiong Jia*, Jiangyong Huang, Jingze Zhang, Siyuan Huang  <em>ICML, 2026</em></p>
-          <div class="buttons">
-            <a href="">Paper</a>
-            <a href="#">Code</a>
-            <a href="#">Page</a>
-          </div>
-        </div>
-
-        <div class="publication">
-          <h3>OmniClone: Engineering a Robust, All-Rounder Whole-Body Humanoid Teleoperation System</h3>
-          <p>Yixuan Li*, Le Ma*, Yutang Lin*, Yushi Du,Mengya Liu</strong>, Kaizhe Hu, Jieming Cui, Yixin Zhu, Wei Liang,Baoxiong Jia,Siyuan Huang </p>
-          <div class="buttons">
-            <a href="https://arxiv.org/pdf/2603.14327">Paper</a>
-            <a href="#">Code</a>
-            <a href="#">Page</a>
-          </div>
-        </div>
-        
-        <div class="publication">
-          <h3>One2Any: One-Reference 6D Pose Estimation for Any Object</h3>
-          <p><strong>Mengya Liu</strong>, Siyuan Li, Ajad Chhatkuli, Prune Truong, Luc Van Gool, Federico Tombari <em>CVPR, 2025</em></p>
-          <div class="buttons">
-            <a href="https://arxiv.org/pdf/2409.15939">Paper</a>
-            <a href="#">Code</a>
-            <a href="#">Page</a>
-          </div>
-        </div>
-
-        <div class="publication">
-          <h3>Self-supervised Shape Completion via Involution and Implicit Correspondences</h3>
-          <p><strong>Mengya Liu</strong>, Ajad Chhatkuli, Janis Postels, Luc Van Gool, Federico Tombari <br><em>ECCV, 2024</em></p>
-          <div class="buttons">
-            <a href="https://arxiv.org/pdf/2409.15939">Paper</a>
-            <a href="#">Code</a>
-            <a href="#">Page</a>
-          </div>
-        </div>
-
-        <div class="publication">
-          <h3>Unsupervised Template Warp Consistency for Implicit Surface Correspondences</h3>
-          <p><strong>Mengya Liu</strong>, Ajad Chhatkuli, Janis Postels, Luc Van Gool, Federico Tombari <em>Eurographics, 2023</em></p>
-          <div class="buttons">
-            <a href="https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/cgf.14745">Paper</a>
-            <a href="#">Code</a>
-            <a href="#">Page</a>
-          </div>
-        </div>
-
-        <div class="publication">
-          <h3>Go with the Flows: Mixtures of Normalizing Flows for Point Cloud Generation and Reconstruction</h3>
-          <p><strong>Janis Postels, Mengya Liu</strong>, Riccardo Spezialetti, Luc Van Gool, Federico Tombari <em>3D Vision, 2021</em></p>
-          <div class="buttons">
-            <a href="https://arxiv.org/pdf/2106.03135">Paper</a>
-            <a href="#">Code</a>
-            <a href="#">Page</a>
-          </div>
-        </div>
+      <section id="publications" class="publications" aria-labelledby="publications-heading">
+        <div class="section-heading"><h2 id="publications-heading">Selected Publications</h2><span>* Equal contribution</span></div>
+        <!-- Each preview links to the official project or publication page. -->
+        <article class="publication" id="zero-hlm">
+          <a class="paper-preview" href="https://young-bit.github.io/zero-hlm/" aria-label="Zero-HLM: Generalizable Humanoid Loco-Manipulation without Real Robot Data — project page"><img src="assets/zero-hlm.webp" alt="Zero-HLM simulation and real-world humanoid deployment preview" width="960" height="600" loading="lazy"><span>Project page <span aria-hidden="true">↗</span></span></a>
+          <div class="paper-content"><div class="paper-meta"><span>Under Review</span><time datetime="2026">2026</time></div>
+            <h3><a href="https://young-bit.github.io/zero-hlm/">Zero-HLM: Generalizable Humanoid Loco-Manipulation without Real Robot Data</a></h3><p class="authors">Dianyi Yang*, <strong>Mengya Liu*</strong>, Zhumei Wang, Yu Liu, Xiaochen Zhang, Yixuan Li, Le Ma, Yuhang Yang, Weiqi Huang, Wei Liang†, Baoxiong Jia†, Siyuan Huang†</p>
+            <p class="authors">* Co-first authors · † Co-last authors<br>Project lead: Baoxiong Jia</p>
+            <div class="paper-links"><a href="https://arxiv.org/pdf/2610.35075">Paper ↗</a><a href="https://young-bit.github.io/zero-hlm/">Project page ↗</a><a href="https://github.com/BIGAI-General-Vision-Lab/Zero-HLM-Bench">Benchmark ↗</a></div></div>
+        </article>
+        <article class="publication" id="lara">
+          <a class="paper-preview" href="https://lmy1001.github.io/ICML26_LARA/" aria-label="LARA: Latent Action Representation Alignment for Vision-Language-Action Models — project page"><img src="assets/lara.webp" alt="LARA latent action representation alignment overview" width="960" height="600" loading="lazy"><span>Project page <span aria-hidden="true">↗</span></span></a>
+          <div class="paper-content"><div class="paper-meta"><span>ICML</span><time datetime="2026">2026</time></div>
+            <h3><a href="https://lmy1001.github.io/ICML26_LARA/">LARA: Latent Action Representation Alignment for Vision-Language-Action Models</a></h3><p class="authors"><strong>Mengya Liu*</strong>, Baoxiong Jia*, Jiangyong Huang, Jingze Zhang, Siyuan Huang</p>
+            <div class="paper-links"><a href="https://arxiv.org/pdf/2606.07100">Paper ↗</a><a href="https://lmy1001.github.io/ICML26_LARA/">Project page ↗</a><a href="https://github.com/lmy1001/LARA">Code ↗</a></div></div>
+        </article>
+        <article class="publication" id="omniclone">
+          <a class="paper-preview" href="https://omniclone.github.io/" aria-label="OmniClone: Engineering a Robust, All-Rounder Whole-Body Humanoid Teleoperation System — project page"><img src="assets/omniclone.webp" alt="OmniClone whole-body teleoperation pipeline" width="960" height="600" loading="lazy"><span>Project page <span aria-hidden="true">↗</span></span></a>
+          <div class="paper-content"><div class="paper-meta"><span>arXiv</span><time datetime="2026">2026</time></div>
+            <h3><a href="https://omniclone.github.io/">OmniClone: Engineering a Robust, All-Rounder Whole-Body Humanoid Teleoperation System</a></h3><p class="authors">Yixuan Li*, Le Ma*, Yutang Lin*, Yushi Du, <strong>Mengya Liu</strong>, Kaizhe Hu, Jieming Cui, Yixin Zhu, Wei Liang, Baoxiong Jia, Siyuan Huang</p>
+            <div class="paper-links"><a href="https://arxiv.org/pdf/2603.14327">Paper ↗</a><a href="https://omniclone.github.io/">Project page ↗</a><a href="https://github.com/yixxuan-li/OmniClone">Code ↗</a></div></div>
+        </article>
+        <article class="publication" id="one2any">
+          <a class="paper-preview" href="https://arxiv.org/abs/2505.04109" aria-label="One2Any: One-Reference 6D Pose Estimation for Any Object — paper page"><img src="assets/one2any.webp" alt="One2Any reference and query object pose estimation examples" width="960" height="600" loading="lazy"><span>Paper page <span aria-hidden="true">↗</span></span></a>
+          <div class="paper-content"><div class="paper-meta"><span>CVPR</span><time datetime="2025">2025</time></div>
+            <h3><a href="https://arxiv.org/abs/2505.04109">One2Any: One-Reference 6D Pose Estimation for Any Object</a></h3><p class="authors"><strong>Mengya Liu</strong>, Siyuan Li, Ajad Chhatkuli, Prune Truong, Luc Van Gool, Federico Tombari</p>
+            <div class="paper-links"><a href="https://arxiv.org/pdf/2505.04109">Paper ↗</a><a href="https://arxiv.org/abs/2505.04109">Paper page ↗</a><a href="https://github.com/lmy1001/One2Any">Code ↗</a></div></div>
+        </article>
+        <article class="publication" id="completion">
+          <a class="paper-preview" href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/7555_ECCV_2024_paper.php" aria-label="Self-supervised Shape Completion via Involution and Implicit Correspondences — paper page"><img src="assets/completion.webp" alt="Self-supervised shape completion paper preview" width="960" height="600" loading="lazy"><span>Paper page <span aria-hidden="true">↗</span></span></a>
+          <div class="paper-content"><div class="paper-meta"><span>ECCV</span><time datetime="2024">2024</time></div>
+            <h3><a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/7555_ECCV_2024_paper.php">Self-supervised Shape Completion via Involution and Implicit Correspondences</a></h3><p class="authors"><strong>Mengya Liu</strong>, Ajad Chhatkuli, Janis Postels, Luc Van Gool, Federico Tombari</p>
+            <div class="paper-links"><a href="https://arxiv.org/pdf/2409.15939">Paper ↗</a><a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/7555_ECCV_2024_paper.php">Paper page ↗</a></div></div>
+        </article>
+        <article class="publication" id="warp">
+          <a class="paper-preview" href="https://diglib.eg.org/items/542dd5fa-7b23-47a5-b7fd-9fc0bbead9cf" aria-label="Unsupervised Template Warp Consistency for Implicit Surface Correspondences — paper page"><img src="assets/warp.webp" alt="Template warp shape reconstruction and correspondence examples" width="960" height="600" loading="lazy"><span>Paper page <span aria-hidden="true">↗</span></span></a>
+          <div class="paper-content"><div class="paper-meta"><span>Eurographics</span><time datetime="2023">2023</time></div>
+            <h3><a href="https://diglib.eg.org/items/542dd5fa-7b23-47a5-b7fd-9fc0bbead9cf">Unsupervised Template Warp Consistency for Implicit Surface Correspondences</a></h3><p class="authors"><strong>Mengya Liu</strong>, Ajad Chhatkuli, Janis Postels, Luc Van Gool, Federico Tombari</p>
+            <div class="paper-links"><a href="https://diglib.eg.org/bitstreams/c59a94d0-c861-49ff-a5ef-8f1f51fefac3/download">Paper ↗</a><a href="https://diglib.eg.org/items/542dd5fa-7b23-47a5-b7fd-9fc0bbead9cf">Paper page ↗</a><a href="https://github.com/lmy1001/template_warp_consistency">Code ↗</a></div></div>
+        </article>
+        <article class="publication" id="flows">
+          <a class="paper-preview" href="https://arxiv.org/abs/2106.03135" aria-label="Go with the Flows: Mixtures of Normalizing Flows for Point Cloud Generation and Reconstruction — paper page"><img src="assets/flows.webp" alt="Go with the Flows generated point cloud examples" width="960" height="600" loading="lazy"><span>Paper page <span aria-hidden="true">↗</span></span></a>
+          <div class="paper-content"><div class="paper-meta"><span>3DV</span><time datetime="2021">2021</time></div>
+            <h3><a href="https://arxiv.org/abs/2106.03135">Go with the Flows: Mixtures of Normalizing Flows for Point Cloud Generation and Reconstruction</a></h3><p class="authors">Janis Postels, <strong>Mengya Liu</strong>, Riccardo Spezialetti, Luc Van Gool, Federico Tombari</p>
+            <div class="paper-links"><a href="https://arxiv.org/pdf/2106.03135">Paper ↗</a><a href="https://arxiv.org/abs/2106.03135">Paper page ↗</a><a href="https://github.com/janisgp/go_with_the_flows">Code ↗</a></div></div>
+        </article>
       </section>
     </main>
-
-    <footer>
-      <p>&copy; 2025 Mengya Liu</p>
-    </footer>
-    
-  </div> <!-- end container -->
+    <footer><span>© 2026 Mengya Liu</span><a href="#about">Back to top ↑</a></footer>
+  </div>
 </body>
 </html>
